@@ -83,6 +83,7 @@
 	transform: rotate(-45deg);
 }
 	.menu2{
+	margin-top: -30px;	
 	padding-top: 100px;
 	position: fixed;
 	z-index: 20;
@@ -131,11 +132,15 @@ li{
 .active .meny_overfow{
 	display: block;
 }
-/*коней бургер меню*/
+/*конец бургер меню*/
 
 
 
-
+@media (max-height: 680px){
+	.scroll-mouse{
+		margin-top: 100px;
+	}
+}
 
 
 @media (max-width: 1160px) {
