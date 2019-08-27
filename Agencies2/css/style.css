@@ -1,0 +1,624 @@
+body{
+	font-family: Arial, sans-serif;
+	background: white;
+	color: white;
+}
+*{
+	margin:0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{
+	outline: none;
+}
+a:focus,a:active{
+	outline: none;
+}
+nav,footer,header,aside{
+	display: block;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust:100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust:100%;
+}
+input,button,textarea{
+	font-family: inherit;
+}
+
+.clearfix:after {
+	content:""; 
+	display: table;
+	width: 100%;
+	clear:both;
+}
+.container{
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.header{
+	background: url(../img/bg1.png) no-repeat center top / cover;
+	height: 100vh;
+	width: 100%;
+	padding-top: 100px;
+}
+
+nav{
+	margin-top: -180px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid grey;
+}
+.logo{
+	width: 100px;
+	position: relative;
+	top: 80px;
+}
+.logo .kvadrat1 a{
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+	background: #11749E;
+	padding: 20px;
+	position: relative;
+	z-index: 2;
+	top: 43px;
+	right: 20px;
+}
+.logo .kvadrat2{
+	background: white;
+	width: 75px;
+	height: 75px;
+	opacity: 0.7;
+}
+.menu2{
+	margin-left: 200px;
+	padding-top: 35px;
+	
+}
+.menu2 .nav_menu li{
+	float: left;
+}
+.menu2 .nav_menu li a{
+	float: left;
+	color: white;
+	font-size: 20px;
+	margin-left: 2em;
+}
+
+.menu_link:after {
+	margin-top: 35px;
+    display: block; /*превращаем его в блочный элемент*/
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 5px; /*задаём высоту линии*/
+    width: 0%; /*задаём начальную ширину элемента (линии)*/
+    background-color: #11749E; /*цвет фона элемента*/
+     transition: width 0.3s ease-in-out;/*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+.menu_link:hover:after,
+.menu_link:focus:after {
+    width: 100%;
+}
+.social_sety {
+	margin-left: 60px;
+	float: left;
+}
+.social_sety a{
+	color: white;
+	margin-left: 20px;
+	font-size: 19px;
+}
+.social_sety a:hover{
+	color: #007EA8;
+	transition: all 0.4s ease;
+}
+.offer{
+	padding-top: 275px;
+	text-align: center;
+}
+.offer h1{
+	font-size: 159px;
+	text-transform: uppercase;
+	color: white;
+}
+.offer p{
+	font-size: 25px;
+	color: #007EA8;
+	text-transform: uppercase;
+	letter-spacing: 0.8em;
+}
+.scroll-mouse{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-top: 200px;
+}
+#scroll-to{
+	position: relative;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+.chevron{
+	position: absolute;
+	width: 28px;
+	height: 8px;
+	opacity: 0;
+	transform: scale3d(0.5,0.5,0.5);
+	animation: move 3s ease-out infinite;
+}
+.chevron:before, .chevron:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 51%;
+	background: white;
+}
+.chevron:before {
+	left: 0;
+	transform: skew(0deg, 30deg);
+}
+.chevron:after{
+	right: 0;
+	width: 50%;
+	transform: skew(0deg, -30deg);
+}
+.chevron{
+	cursor: pointer;
+}
+@keyframes move {
+	25%{
+		opacity: 1;
+	}
+	33%{
+		opacity: 1;
+		transform: translateY(30px);
+	}
+	67%{
+		opacity: 1;
+		transform: translateY(40px);
+	}
+	100%{
+		opacity: 0;
+		transform: translateY(55px) scale3d(0.5,0.5,0.5);
+	}
+}
+.text{
+	display: block;
+	color: white;
+	font-weight: bold;
+	width: 100px;
+	margin-left: -35px;
+	white-space: nowrap;
+	opacity: 0.25;
+	animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse{
+	to{
+		opacity: 1;
+
+	}
+}
+
+.awesome{
+	background: #0075A1;
+
+}
+.agansi{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	
+}
+.agansi .oglavline{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+}
+.agansi .oglav{
+	z-index: 2;
+	position: absolute;
+	font-size: 37px;
+	text-transform: uppercase;
+}
+.agansi .dable{
+	
+	font-size: 247.18px;
+	color: #008EB2;
+	z-index: 1;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.elipsi{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+.elips{
+	color: white;
+}
+.elips img{
+	background-color: #0075A1;
+	border-radius: 50%;
+	width: 130px;
+	height: 130px;
+}
+.elips h4{
+	margin-top: 25px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.elips p{
+	margin-top: 30px;
+	font-size: 15px;
+	line-height: 25px;
+}
+.raboty{
+display: flex;
+justify-content: space-between;
+}
+.raboty .poragraf{
+	margin-top: 80px;
+	padding-bottom: 115px;
+}
+.stolbick1{
+	background: url(../img/rabota1.png) no-repeat center top / cover;
+}
+.raboty .poragraf h3{
+	font-size: 25px;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+.raboty .poragraf p{
+	margin-top: 35px;
+	line-height: 25px;
+}
+.stolbick2{
+	background: url(../img/rabota2.png) no-repeat center top / cover;
+	margin-top: -1px;
+}
+.raboty2{
+display: flex;
+justify-content: flex-end;
+
+}
+.raboty2 .poragraf{
+	padding-top: 80px;
+	padding-bottom: 115px;
+	color: black;
+	
+}
+
+.raboty2 .poragraf h3{
+	font-size: 25px;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+.raboty2 .poragraf p{
+	margin-top: 35px;
+	line-height: 25px;
+}
+
+
+
+.blog{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.oglavlenie2{
+	
+	color: black;
+	
+	display: flex;
+	align-items: center;
+	padding-top: 100px;
+	justify-content: center;
+	text-align: center;
+}
+.oglav2{
+	z-index: 2;
+	position: absolute;
+	width: 900px;
+	font-size: 37px;
+	text-transform: uppercase;
+	color: black;
+}
+.dable2{
+	position: absolute;
+	font-size: 247.18px;
+	color: #D8D8D8;
+	z-index: 1;
+	font-weight: 700;
+
+	text-transform: uppercase;
+}
+.portfolios{
+	color: black;
+	margin-top: 240px;
+}
+.ogliv p{
+	font-size: 30px;
+	text-align: center;
+}
+.portfolios .blogs{
+	margin-top: 70px;
+	display: flex;
+	justify-content: space-around;
+}
+.blogs .rabota{
+	text-align: center;
+}
+.blogs .rabota h5{
+	color: #0076A2;
+	font-size: 18px;
+	margin-top: 40px;
+	text-transform: uppercase;
+}
+.blogs .rabota p{
+	margin-top: 30px;
+	line-height: 22px;
+}
+.risunoks{
+	background: #0075A1;
+}
+.risunoks .risunki{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 110px;
+	padding-bottom: 150px;
+}
+.risunki .risunok{
+	display: flex;
+
+}
+.risunki .risunok p{
+	line-height: 20px;
+	margin-left: 20px;
+}
+.akitainudog{
+	background: url(../img/bg2.png) no-repeat center top / cover;
+}
+.akita{
+	display: flex;
+	justify-content: space-around;
+}
+.akita .poragrafei{
+	padding-top: 220px;
+	padding-bottom: 240px;
+}
+.akita .poragrafei h4{
+	text-transform: uppercase;
+	font-size: 25px;
+}
+.akita .poragrafei p{
+	margin-top: 40px;
+	line-height: 22px;
+}
+.lines{
+	margin-top: 60px;
+}
+.lines .line1{
+	width: 370px;
+	height: 37px;
+	background: #0075A1;
+}
+.line1 a, .line2 a, .line3 a{
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	line-height: 35px;
+	margin-left: 20px;
+}
+.line2, .line3{
+	margin-top: 20px;
+}
+.lines .line2{
+	width: 400px;
+	height: 37px;
+	background: #0075A1;
+}
+.lines .line3{
+	width: 420px;
+	height: 37px;
+	background: #0075A1;
+}
+.line1, .line2, .line3:hover{
+	cursor: pointer;
+}
+.telephon{
+	background: url(../img/phone.png) no-repeat center top / cover;
+	height: 644px;
+	width: 320px;
+	margin-top: 90px;
+}
+.telephon:hover{
+	cursor: pointer;
+}
+.oteam{
+	
+	padding-top: 60px;
+}
+.teams{
+color: black;
+	margin-top: 240px;
+
+}	
+.timis{
+	margin-top: 70px;
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 540px;
+}
+.team{
+	margin-right: 250px;
+	text-align: center;
+
+}
+.team img{
+	position: absolute;
+	z-index: 2;
+	
+}
+.team .names{
+	position: absolute;
+	background: white;
+	padding: 15px 40px;
+	margin-top: 380px;
+	margin-left: 30px;
+	text-align: center;
+	z-index: 3
+}
+.team .names h4{
+	color: #0082AA;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.team .names p{
+	font-size: 15px
+}
+.contact_us{
+	background: url(../img/bg3.png) no-repeat center top / cover;
+	
+}
+.contact{
+	padding-top: 140px;
+	padding-bottom: 100px;
+}
+.oglavlenie3{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+}
+.oglav3{
+	z-index: 2;
+	position: absolute;
+	width: 900px;
+	font-size: 37px;
+	text-transform: uppercase;
+	color: white;
+}
+.dable3{
+	position: absolute;
+	font-size: 247.18px;
+	color: rgba(74,73,75,0.7);
+	z-index: 1;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.wvodpolya{
+	margin-top: 400px;
+	text-align: center;
+
+}
+::-webkit-input-placeholder {
+	color: white;
+}
+::-moz-placeholder{
+	color: white;
+}
+:-moz-placeholder{
+	color: white;
+}
+:-ms-input-placeholder{
+	color: white;
+}
+input[type="text"], input[type="Email"], input[type="phone"]{
+	width: 370px;
+	font-size: 15px;
+	border-radius: 4px;
+	padding-left: 10px;
+	height: 50px;
+	border: 1px solid white;
+	background: rgba(0,0,0,0.1);
+	color: white;
+}
+input[type="Email"], input[type="phone"]{
+	margin-left: 20px;
+}
+textarea{
+	width: 1160px;
+	height: 150px;
+	padding-left: 20px;
+	padding-top: 20px;
+	border: 1px solid white;
+	background: rgba(0,0,0,0.1);
+	border-radius: 4px;
+	margin-top: 35px;
+	color: white;
+}
+input[type="submit"]{
+	margin-top: 40px;
+	width: 225px;
+	height: 60px;
+	text-align: center;
+	color: white;
+	background: #0075A1;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+}
+input[type="submit"]:hover{	
+	text-align: center;
+	color: #0075A1;
+	background: rgba(0,0,0,0.2);
+	border: 3px solid  #0075A1;
+}
+input[type="submit"]:hover{
+	cursor: pointer;
+}
+.map_info{
+	height: 375px;
+	background: url(../img/map.png) no-repeat center top / cover;
+	background-position: 76% 0%;
+	margin-top: -3px;
+	background-size: cover;
+
+}
+.map_info:hover{
+	cursor: pointer;
+}
+.footer{
+	background: #1C1C1C;
+}
+.foter{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.foter p{
+	font-size: 13px;
+	font-weight: bold;
+}
+.delay {
+  -animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+}
+.container img:hover{
+	cursor: pointer;
+}
