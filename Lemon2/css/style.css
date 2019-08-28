@@ -1,0 +1,1005 @@
+body{
+	font-family: Arial, sans-serif;	
+	background: #EBEBEB;
+	padding-top: 250px;
+}
+p{
+	font-family: 'Josefin Slab', serif;
+	color: #0B0B0B;
+}
+*{
+	margin:0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{
+	outline: none;
+}
+a:focus,a:active{
+	outline: none;
+}
+nav,footer,header,aside{
+	display: block;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust:100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust:100%;
+}
+input,button,textarea{
+	font-family: inherit;
+}
+.clearfix:after {
+	content:""; 
+	display: table;
+	width: 100%;
+	clear:both;
+}
+.container{
+	width: 100%;
+	max-width: 1120px;
+	margin: 0 auto;
+}
+.container2{
+	width: 100%;
+	max-width: 1024px;
+	margin:0 auto;
+}
+.top_logo{
+	text-align: center;
+}
+.pod_logo{
+	background: white;
+
+}
+.pod_logo img{
+	height: 40px;
+
+}
+nav {
+	background: white;
+	margin-top: 120px;
+	display: flex;
+	justify-content: space-around;
+	height: 120px;
+	align-items: center;
+}
+.menu2{
+	margin-top: 5px;
+}
+.menu2 li{
+	float: left;
+}
+.menu2 li a{
+	text-transform: uppercase;
+	margin-left: 2em;
+	font-size: 17px;	 
+	display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный */
+	line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+	color:black;/*Задаём цвет ссылки*/
+}
+
+.menu_link{
+	transition: width 0.5s ease-in-out;
+}
+.menu_link:after {
+	margin:0 auto;
+	margin-top: 2px;
+    display: block; /*превращаем его в блочный элемент*/
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 2px; /*задаём высоту линии*/
+    width: 0%; /*задаём начальную ширину элемента (линии)*/
+    background-color: black; /*цвет фона элемента*/
+    transition: width 0.5s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+.menu_link:hover:after,
+.menu_link:focus:after {
+    width: 100%;
+}
+
+.poisk input{
+border:1px solid grey;
+text-transform: uppercase;
+padding-left: 25px;
+
+text-align: center;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+i.fa {
+	width: 18px;
+	height: 18px;
+	line-height: 25px;
+	margin-right: -50px;
+	position: relative;
+	z-index: 1;
+	
+	text-align: center;
+}
+i.fa + input{
+	padding-left: 15px;
+}
+#meshu{
+	background: url(../images/Photo.png) no-repeat center top / cover;
+	margin-top: 90px;
+	height: 49vh;
+	margin-bottom: 85px;
+}
+.fruckt{
+	padding-top: 50px;
+	margin-left: 90px;
+	padding-bottom: 60px;
+}
+.fruckt img{
+	height: 110px;
+}
+.fruckt h2{
+	margin-top: 35px;
+	color: #B41E35;
+	font-size: 25px;
+}
+.fruckt p{
+	margin-top: 30px;
+	color: #0B0B0B;
+	font-size: 16px;
+}
+.bottom .fi{
+	padding:10px 20px 10px 20px;
+	border: 2px solid grey;
+
+}
+.bottom{
+	margin-top: 25px;
+}
+.bottom .fi:hover{
+	cursor: pointer;
+	background: grey;
+	color: white;
+	transition: all 0.5s ease;
+}
+.bottom a{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: grey;
+	line-height: 30px;
+}
+.botons{
+	display: none;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 220px;
+}
+.botons a{
+	font-weight: bold;
+	font-size: 40px;
+	color: black
+}
+#porsu{
+	background: white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	min-height: 375px;
+}
+.porsii{
+	display: flex;
+	justify-content: space-around;
+	font-size: 18px;
+	color: #0B0B0B;
+	align-items: center;
+	text-align: center;
+	padding-top: 35px;
+}
+.pors:last-child{
+	padding-top: 20px;
+}
+.pors p{
+	margin-top: 12px;
+	font-size: 18px;
+}
+#BANANA{
+	background: url(../images/Photo11.png) no-repeat center top / cover;
+	margin-top: 100px;
+
+}
+.bananas{
+	margin-left: 50%;
+	padding-top: 40px;
+	padding-bottom: 25px;
+	
+}
+.bananas h2{
+	color: #005454;
+	font-size: 32px;
+}
+.botom .fi{
+	padding:5px 10px 5px 10px;
+	border: 1px solid grey;
+	
+}
+.botom .fi:hover{
+	cursor: pointer;
+	background: grey;
+	color: white;
+	transition: all 0.5s ease;
+}
+.botom{
+	margin-top: 20px;
+	margin-left: 350px;
+}
+.botom a{
+	text-transform: uppercase;
+	color: #0B0B0B;
+	line-height: 15px;
+}
+.bananas p{
+	margin-top: 25px;
+	line-height: 18px;
+	font-size: 16px;
+}
+.bananas h5{
+	font-size: 16px;
+	margin-top: 25px;
+}
+
+
+.portfolies{
+	margin-top: 100px;
+}
+.problem{
+	background: url(../images/ipn1.png);
+	width: 520px;
+	height: 520px;
+	float: left;
+	
+}
+.ziga{
+	width: 450px;
+	border-bottom: 1px solid grey;
+	margin:0 auto;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-family: 'Josefin Slab', sans-serif;
+}
+.otvet{
+	text-align: center;
+	margin-left: 15px;
+	padding-top: 195px;
+}
+.otvet h3{
+	font-size: 34px;
+	font-family: 'Josefin Slab', serif;
+	margin-bottom: 10px;
+}
+.otvet span{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #ACACAC;	
+
+}
+.bot .fi{
+	padding:5px 30px 5px 30px;
+	border: 1px solid grey;
+	color: black;
+}
+.bot .fi:hover{
+	cursor: pointer;
+	background: grey;
+	color: white;
+	transition: all 0.5s ease;
+}
+.bot{
+	margin-top: 140px;
+}
+.bot a{
+	text-transform: uppercase;
+	color: grey;
+	line-height: 20px;
+}
+.author{
+	background: white;
+	width: 520px;
+	height: 520px; 
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	float: right;
+}
+.author img{
+	float: left;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+.author p{
+	margin-top: 10px;
+	font-size: 16px;
+}
+.author p:nth-child(4){
+	border-bottom: 2px solid grey;
+	width: 300px;
+	float: left;
+	padding-bottom: 40px;
+}
+.author h4{
+	margin-top: 30px;
+	font-size: 24px;
+}
+
+.author h5{
+	margin-top: 90px;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.ob p{
+	margin-left: 170px;
+	line-height: 16px;
+}
+.ob img{
+	float: right;
+}
+
+#portfolio{
+	padding-top: 70px;
+	padding-bottom: 100px;
+	margin:0 auto;
+}
+
+.cichiorchichi{
+	background: white;
+	width: 300px;
+	height: 360px;
+}
+.ziga2{
+	width: 250px;
+	margin:0 auto;
+	border-bottom: 1px solid grey;
+	font-weight: bold;
+	padding-top: 10px;
+	font-family: 'Josefin Slab', serif;
+	color: #005454;
+	font-size: 22px;
+	line-height: 50px;
+}
+.avu{
+	margin-top: 15px;
+}
+.piu{
+	float: right;
+	margin-right: 35px;
+	margin-top: 20px;
+}
+.piu span{
+	font-weight: bold;
+}
+.slidi{
+	margin-top: 10px;
+	width: 100%;
+}
+.Recipe{
+	min-height: 450px;
+	width: 290px;
+	background: white;
+}
+.ziga3{
+	width: 250px;
+	line-height: 32px;
+	padding-left: 5px;
+	padding-top: 20px;
+	font-weight: bold;
+	border-bottom: 2px solid rgba(0,0,0,0.2)
+}
+.meni ul{
+	display: flex;
+	padding-top: 15px;
+	justify-content: space-around;
+
+}
+.meni li{
+	
+}
+.meni a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	font-size: 12px;
+	
+}
+.meni a:hover{
+	font-weight: bold;
+}
+.menisha1{
+	padding-top: 20px;
+}
+.menisha{
+	margin-top: 15px;
+}
+.menisha1 span, p{
+	font-size: 12px;
+}
+.menisha1 span{
+	
+}
+.menisha1 p{
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 10px;
+	margin-left: 100px;
+}
+.menisha1 img{
+	float: left;
+	margin-left: 20px;
+}
+.botomi .fi{
+	padding:5px 10px 5px 10px;
+	border: 2px solid grey;
+	
+}
+.botomi .fi:hover{
+	cursor: pointer;
+	background: grey;
+	color: white;
+	transition: all 0.5s ease;
+}
+.botomi{
+	float: right;
+	text-align: center;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+.botomi a{
+	text-transform: uppercase;
+	color: grey;
+	line-height: 25px;
+	font-weight: bold;
+}
+.popularNow{
+	background: url(../images/Photodfsf.png) no-repeat center top / cover;
+	width:290px;
+	height:360px;
+	padding-top: 30px;
+
+}
+.ziga4 .zag{
+	color: #AB0722;
+	font-weight: bold;
+	font-size: 32px;
+	border-bottom: 3px solid white;
+	width: 250px;
+	margin-left: 15px;
+}
+.vnutre .zag2{
+	font-weight: bold;
+	margin-left:15px;
+	font-size: 22px;
+}
+.vnutre p{
+	font-size: 16px;
+	margin-top: 18px;
+	margin-left: 20px;
+}
+.botop .fi{
+	padding:5px 10px 5px 10px;
+	border: 1px solid grey;
+	
+}
+.botop .fi:hover{
+	cursor: pointer;
+	background: grey;
+	color: white;
+	transition: all 0.5s ease;
+}
+.botop{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.botop a{
+	text-transform: uppercase;
+	color: grey;
+	font-size: 12px;
+	line-height: 22px;
+}
+.torget{
+	width: 290px;
+	float: left;
+	height: 470px;
+	background: white;
+	margin-left: 50px;
+}
+.ziga5{
+	font-size: 20px;
+	margin-top: 30px;
+	margin-left: 20px;
+	line-height: 40px;
+
+}
+.torget h6{
+	font-size: 20px;
+	color: #005454;
+	margin-left: 30px;
+	margin-top: 15px;
+}
+.proc{
+	margin-top: 30px;
+	
+}
+.proc img{
+	float: left;
+	margin-left: 25px;
+}
+.proc span{
+	margin-left: 20px;
+}
+.proc p{
+	float: right;
+	margin-right: 75px;
+	margin-top: 10px;
+}
+
+
+.proc0{
+	margin-top: 70px;
+	
+}
+.proc0 img{
+	float: left;
+	margin-left: 25px;
+}
+.proc0 span{
+	margin-left: 20px;
+}
+.proc0 p{
+	float: right;
+	margin-right: 75px;
+	margin-top: 10px;
+}
+.proc1{
+	margin-top: 80px;
+	
+}
+.proc1 img{
+	float: left;
+	margin-left: 25px;
+}
+.proc1 span{
+	margin-left: 20px;
+
+}
+.proc1 p{
+	margin-top: 10px;
+	float: right;
+	margin-right: 60px;
+	font-size: 14px;
+}
+.togsi{
+	width: 290px;
+	height: 160px;
+	background: white;
+	margin-top: 50px;
+	margin:0 auto;
+}
+.togsi p{
+	text-transform: uppercase;
+	line-height: 25px;
+	margin-left: 25px;
+}
+.stran1{
+
+}
+.stran2{
+	margin-top: 60px;
+}
+.stolbick1{
+	float: left;
+}
+.presentationline{
+	background: white;
+	height: 470px;
+	margin-top: 40px;
+	width: 290px;
+}
+.oglav{
+	margin-left: 30px;
+}
+.oglav p{
+	font-weight: bold;
+	font-size: 20px;
+	font-family: Arial, sans-serif;
+	color: #006767;
+	margin-top: 20px;
+}
+
+
+
+.procent:first-child{
+	padding-top: 30px;
+}
+.procent{
+	padding-top: 40px;
+	color: #ADADAD;
+}
+.procent span{
+	margin-left: 20px;
+}
+.procent p{
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 5px;
+	margin-left: 100px;
+	color: #ADADAD;
+	line-height: 17px;
+}
+.procent img{
+	float: left;
+	margin-left: 20px;
+}
+
+
+.stolbick2{
+	float: left;
+	margin-left: 80px;
+}
+.tags1{
+	background: white;
+	height: 160px;
+	width: 290px;
+	margin-top:50px;
+}
+.tags1 .shtrihh{
+margin-top: 10px;
+margin-left: 20px;
+}
+.tags1 .shtrihh p{
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 10px;
+	font-family: Arial, sans-serif;
+	margin-left: 10px;
+}
+
+
+
+
+.calendare{
+	height: 365px;
+	width: 290px;
+	background: white;
+	margin-top: 45px;
+	box-sizing: border-box;	
+}
+.calendare .date{
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+	grid-gap: 10px;
+	box-sizing: border-box;
+}
+.calendare .date div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	color: #262626;
+}
+.calendare .date div.day{
+	font-weight: 700;
+	border-bottom: 1px solid black;
+}
+.calendare .date div.numberser{
+	font-weight: 700;
+	color: #CECECE;
+}
+.calendare .date div.day:first-child,
+.calendare .date div.number:nth-child(7n + 1)
+{
+	color: red;
+	font-weight: 700;
+
+}
+.mesyac{
+	text-align: center;
+	margin-top: 20px;
+}
+.mesyac p{
+	font-size: 18px;
+}
+.stolbick3{
+	float: right;
+}
+.timeline{
+	height: 430px;
+	width: 290px;
+	background: white;
+	margin-top: 40px;
+}
+.polosiie{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin-top: 75px;
+	width: 205px;
+	border-bottom: 1px solid #DEDEDE;
+	margin-left: 40px;
+	padding-bottom: 20px;
+}
+.poragraf p{
+	display: flex;
+	font-size: 18px;
+	padding-bottom: 40px;
+	text-transform: uppercase;
+	-webkit-transform: rotate(-90deg); /* разворот элемента для разных бразуеров*/
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  	justify-content: flex-end;
+  	margin-top: 0px;
+}
+.polosa2 p{
+margin-top: 5px;
+}
+.polosa3 p{
+margin-top: 55px;
+}
+.polosa1{
+	height: 70px;
+	width: 8px;
+	background-color: #55D1C6;
+}
+.polosa2{
+	height: 100px;
+	width: 8px;
+	background-color: #005858;
+}
+.polosa3{
+	height: 130px;
+	width: 8px;
+	background-color: #D40052;
+}
+.poragif{
+	text-align: center;
+	margin-top: 15px;
+}
+.poragif p{
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+
+.container3{
+	width: 100%;
+	max-width: 745px;
+	margin:0 auto;
+}
+#registraciya{
+	padding-bottom: 125px;
+}
+.login{
+width: 330px;
+height: 405px;
+background: white;
+float: left;
+}
+.signin{
+width: 330px;
+height: 535px;
+background: white;
+float: right;
+}
+.logsiinfol{
+	margin-top: 25px;
+	margin-left: 32px;
+}
+.logsiinfol p{
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.polya {
+	margin-top: 25px;
+	text-align: center;
+	
+}
+.polya input{
+	height: 40px;
+	width: 265px;
+	border: 1px solid grey;
+	margin-top: 15px;
+	padding-left: 5px;
+}
+.buttonlogsi .fi{
+	padding:5px 10px 5px 10px;
+	border: 2px solid grey;
+	line-height: 25px;
+	text-transform: uppercase;
+	font-family: Arial, sans-serif;
+	color: black;
+}
+.buttonlogsi .fi:hover{
+	cursor: pointer;
+	background: grey;
+	color: white;
+	transition: all 0.5s ease;
+}
+.buttonlogsi{
+	text-align: center;
+	margin-top: 30px;
+}
+.icons2{
+	display: flex;
+	justify-content: center;
+
+}
+.icons2 a{
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.icons2 a:hover{
+	color: grey;
+	transition: all 0.5s ease;
+}
+.icons2 a:first-child{
+	margin-left: 0;
+}
+.nisha span, p{
+	margin-left: 10px;
+}
+.nisha p{
+	margin-top: 16px;
+	font-size: 20px;
+}
+.nisha span{
+	font-weight: bold;
+
+}
+.nisha .greens{
+	color: green;
+	font-size: 16px;
+}
+#comentarie{	
+}
+.container4{
+	width: 100%;
+	max-width: 840px;
+	margin:0 auto;
+}
+.postcoment{
+	height: 190px;
+	background: white;
+}
+.shapkspostcom{
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-left: 40px;
+}
+.oglavlenyei{
+	float: left;
+}
+.shapkspostcom p{
+	font-size: 24px;
+	font-family: Arial, sans-serif;
+}
+.soceset{
+	float: right;
+	margin-right: 55px;
+}
+.soceset span{
+	font-size: 16px;
+	font-weight: bold;
+}
+.otpravit{
+	width: 750px;
+	height: 90px;
+	padding-top: 15px;
+	background: #F6F6F6;
+	margin:0 auto;
+	
+}
+.otpravit img{
+	float: left;
+	margin-left: 18px;
+}
+.otpravit .impit2 input{
+	width: 500px;
+	height: 40px;
+	float: left;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+.butonotp .fi{
+	padding:10px 15px 10px 15px;
+	border: 2px solid grey;
+	line-height: 25px;
+	background: grey;
+	text-transform: uppercase;
+	line-height: 40px;
+	color: white;
+}
+.butonotp .fi:hover{
+	cursor: pointer;
+	background: white;
+	color: grey;
+	font-weight: bold;
+	transition: all 0.5s ease;
+}
+.butonotp{
+	float: left;
+	margin-top: 10px;
+}
+.footer{
+	width: 100%;
+	max-width: 1120px;
+	margin:0 auto;
+	margin-top: 150px;
+	padding-top: 50px;
+	background:#2f2f2f;
+	min-height: 180px;
+}
+.konece{
+display: flex;
+align-items: center;
+}
+.konece img{
+	width: 87px;
+	height: 36px;
+	margin-left: 86px;
+}
+.konece .menu3{
+	margin-left: 112px;
+}
+.konece .menu3 li{
+	float: left;
+}
+.konece .menu3 li a{
+	color: #767676;
+	font-size: 12px;
+	margin-left: 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.konece .menu3 li a:hover{
+	color: white;
+	transition: all 0.5s ease;
+}
+.konece .social_og{
+	margin-left: 133px;
+	margin-top: 40px;
+}
+.konece .social_og p{
+	color: #767676;
+}
+img:hover{
+	cursor: pointer;
+}
+.sety{
+	float: right;
+	margin-top: 15px;
+}
+.sety a{
+	color: #767676;
+	font-size: 20px;
+	margin-left: 10px;
+}
+.sety a:hover{
+	color: white;
+	transition: all 0.5s ease;
+}
+img:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
