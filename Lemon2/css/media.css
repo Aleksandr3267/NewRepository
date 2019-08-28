@@ -333,7 +333,7 @@ li{
 		bottom: 185px;
 	}
 	.menu2{
-		padding-top: 320px;
+		padding-top: 330px;
 	}
 }
 @media (max-height: 660px){
@@ -341,7 +341,7 @@ li{
 		bottom: 120px;
 	}
 	.menu2{
-		padding-top: 260px;
+		padding-top: 270px;
 	}
 }
 @media (max-height: 560px){
@@ -349,6 +349,6 @@ li{
 		bottom: 70px;
 	}
 	.menu2{
-		padding-top: 210px;
+		padding-top: 240px;
 	}
 }
