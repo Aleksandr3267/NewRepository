@@ -185,7 +185,7 @@ li{
 
 	}
 	.footer{
-		min-height: 335px;
+		min-height: 345px;
 	}
 	.konece{
 		display: block;
@@ -332,9 +332,23 @@ li{
 	.botons{
 		bottom: 185px;
 	}
+	.menu2{
+		padding-top: 320px;
+	}
 }
 @media (max-height: 660px){
 	.botons{
 		bottom: 120px;
+	}
+	.menu2{
+		padding-top: 260px;
+	}
+}
+@media (max-height: 560px){
+	.botons{
+		bottom: 70px;
+	}
+	.menu2{
+		padding-top: 210px;
 	}
 }
