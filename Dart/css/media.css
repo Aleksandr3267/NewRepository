@@ -1,0 +1,261 @@
+
+.header{
+	padding: 50px;
+}
+.footer{
+	padding: 50px;
+}
+#coment{
+	padding: 50px;
+}
+@media(max-width: 1124px){
+	aside{
+		display: block;
+		text-align: center;
+	}
+	.oglav{
+		
+	}
+	.video video{
+		margin-top: 100px;
+	}
+	.button{
+		justify-content: center;
+	}
+}
+@media(max-width: 1000px){
+/*бургер меню*/
+.menu_burger{ /*позиционирование бургер меню*/
+	position: fixed;
+	left: 90%;
+	z-index: 30;
+	width: 50px;
+	height: 40px;
+	top:120px;
+	border-radius: 50%;
+	transition: 0.4s;
+}
+.menu_burger:hover{
+	cursor: pointer;
+}
+.menu_burger:hover .burger_lines{
+	filter: brightness(0.7);
+}
+.burger_lines,
+.burger_lines::after,
+.burger_lines::before{
+	position: absolute;
+	width: 40px;
+	height: 4px;
+	background: #001835;
+}
+.burger_lines{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.burger_lines::before{
+	content: ''; 
+	top: -12px;
+}
+.burger_lines::after{
+	content: '';
+	top: 12px;
+}
+.active .menu_burger,
+.active .burger_lines{
+	background:transparent;
+}
+
+.active .burger_lines::before{
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.active .burger_lines::after{
+	top: 0;
+	transform: rotate(-45deg);
+}
+	.menu{
+	padding-top: 380px;
+	position: fixed;
+	z-index: 20;
+	display: flex;
+	width: 320px;
+	flex-flow: column;
+	height: 100vh;
+	background: rgba(0,0,0,0.5);
+	overflow-y: auto;
+	left: 100%;
+	transition: 0.5s;
+}
+.active .menu{
+	left: 70%;
+}
+.menu li a{
+	color: white;
+}
+.menu li{
+	margin-top: 70px;
+	letter-spacing: 5px;
+	font-weight: bold;
+}
+.menu_link{
+	padding: 40px;
+	font-family: sans-serif;
+	font-size: 22px;
+	
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: bold;
+	color: #fff;
+}
+.menu_link:hover{
+	filter:brightness(0.7);
+}
+
+.meny_overfow{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+}
+.active .meny_overfow{
+	display: block;
+}
+/*конец бургер меню*/
+
+	.content .cssbackground .cssbackground-sector .blick{
+		width: 500px;
+
+	}
+	.content .cssbackground .cssbackground-sector .cssbackground-block .blocking{
+		display: block;
+		text-align: center;
+	}
+	.image{
+		margin:0 auto;
+	}
+}
+@media(max-width: 740px){
+	.active .menu{
+	left: 60%;
+}
+
+	.info{
+		display: block;
+	}
+	.content .cssbackground .cssbackground-sector .blick{
+		width: 320px;
+		
+	}
+	.comenti{
+		display: block;
+		text-align: center;
+	}
+	.comenta{
+		margin: 0;
+	}
+	.button3{
+		float: none;
+	}
+	.com{
+		margin-top: 80px;
+	}
+	.menu2{
+		display: none;
+	}
+}
+@media(max-width: 700px){
+.video video{
+	height: 250px;
+	}
+	.contackt-us{
+		padding: 20px;
+	}
+}
+@media(max-width: 570px){
+	.menu_burger{
+		left: 80%;
+	}
+	.active .menu{
+	left: 50%;
+}
+	.video video{
+	height: 200px;
+	}
+	.easy{
+		display: block;
+	}
+	.easy .imagi{
+		margin-top: 50px;
+	}
+	.licha{
+		display: block;
+		text-align: center;
+	}
+	.licha img{
+		margin:auto;
+	}
+	.servises{
+		display: none;
+		
+	}
+}
+@media(max-width: 450px){
+	.video video{
+	max-width: 100%;
+	width: 100%;
+	}
+	.button{
+		display:block;
+		text-align: center;
+	}
+	.button1{
+		margin: 100px 0 0 0;
+	}
+.button1:last-child{
+	margin-left: 0px;
+}
+	.com{
+		display: block;
+	}
+	.com .comi{
+		margin:0;
+		padding-top: 1px;
+		
+	}
+	.stolb{
+		display: block;
+		text-align: center;
+	}
+	.stolb:nth-child(2){
+	margin-top: 0px;
+}
+	.vod-pole input{
+		margin: 0 0 20px 0;
+		
+	}
+
+}
+@media(max-width: 400px){
+	.active .menu{
+	left: 35%;
+}
+	/*nav{
+		display: block;
+	}*/
+	.bottom{
+		margin: 70px 0 0 0;
+		position: absolute;
+
+	}
+	.social-sety ul li{
+		display: block;
+		float: none;
+		margin:10px 0 0 0;
+	}
+}
