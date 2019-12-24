@@ -156,6 +156,7 @@
 	#main-menu.active{
 		left: 0;
 	}
+
 	.slider .main-menu-wrap ul{
 		display: block;
 		float: left;
@@ -166,6 +167,8 @@
 		text-transform: uppercase;
 		margin:20px 0 20px 0;
 	}
+
+
 }
 @media(max-width: 720px){
 
@@ -274,6 +277,16 @@
 	}
 	.slider__indicators{
 		bottom: 3px;
+	}
+	
+	.oglavline h2{
+		font-size: 14px;
+	}
+	.oglavline h1{
+		font-size: 32px;
+	}
+	.oglavline p{
+		font-size: 12px;
 	}
 }	
 /*end_height*/

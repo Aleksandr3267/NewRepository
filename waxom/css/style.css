@@ -380,7 +380,7 @@ nav .logo:hover{
     }
 
     .slider__item_1 {
-      background: url(../img/bg1.png) no-repeat center top / cover;
+      background: url(../img/bg1.gif) no-repeat center top / cover;
 
     }
 
@@ -389,14 +389,14 @@ nav .logo:hover{
     }
 
     .slider__item_3 {
-      background:  url(../img/bg13.jpg) no-repeat center top / cover;
+      background:  url(../img/bg13.gif) no-repeat center top / cover;
     }
 
     .slider__item_4 {
-      background:  url(../img/bg14.jpg) no-repeat center top / cover;
+      background:  url(../img/bg14.gif) no-repeat center top / cover;
     }
   .slider__item_5 {
-      background:  url(../img/bg15.jpg) no-repeat center top / cover;
+      background:  url(../img/bg15.gif) no-repeat center top / cover;
     }
     
 

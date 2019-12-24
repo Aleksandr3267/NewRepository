@@ -82,9 +82,7 @@ iframe {
   opacity: 1;
 }
 
-.uk-form input[type=checkbox]:not(:disabled),.uk-form input[type=radio]:not(:disabled) {
-  cursor: pointer;
-}
+
 
 .uk-button:not(:disabled) {
   cursor: pointer;
@@ -619,9 +617,7 @@ border-bottom: 10px solid #fbfaf8;
   cursor: pointer;
 }
 
-@font-face {
-  font-family:fontawesome;src:url(../warp/vendor/uikit/fonts/fontawesome-webfont.woff2) format('woff2'),url(../warp/vendor/uikit/fonts/fontawesome-webfont.woff) format("woff"),url(../warp/vendor/uikit/fonts/fontawesome-webfont.ttf) format("truetype");font-weight:400;font-style:normal;
-}
+
 
 [class*=uk-icon-] {
   font-family: FontAwesome;
@@ -717,9 +713,7 @@ border-bottom: 10px solid #fbfaf8;
   background: rgba(255,255,255,.9);
 }
 
-@font-face {
-  font-family:simple-line-icons;src:url(fonts/Simple-Line-Icons.eot?v=2.2.2);src:url(fonts/Simple-Line-Icons.eot?#iefix&v=2.2.2) format('embedded-opentype'),url(fonts/Simple-Line-Icons.ttf?v=2.2.2) format('truetype'),url(fonts/Simple-Line-Icons.woff2?v=2.2.2) format('woff2'),url(fonts/Simple-Line-Icons.woff?v=2.2.2) format('woff'),url(fonts/Simple-Line-Icons.svg?v=2.2.2#simple-line-icons) format('svg');font-weight:400;font-style:normal;
-}
+
 
 
 
@@ -843,10 +837,7 @@ border-bottom: 10px solid #fbfaf8;
   }
 }
 
-/*[class*=uk-width] {
-  box-sizing: border-box;
-  width: 100%;
-}*/
+
 
 .uk-width-1-1 {
   width: 100%;
@@ -897,9 +888,7 @@ border-bottom: 10px solid #fbfaf8;
   opacity: 1;
 }
 
-.uk-form input[type=checkbox]:not(:disabled),.uk-form input[type=radio]:not(:disabled) {
-  cursor: pointer;
-}
+
 
 .uk-button:not(:disabled) {
   cursor: pointer;
@@ -911,10 +900,7 @@ border-bottom: 10px solid #fbfaf8;
   opacity: 0;
 }
 
-.uk-animation-hover:not(:hover),.uk-animation-hover:not(:hover) [class*=uk-animation-] {
-  -webkit-animation-name: none;
-  animation-name: none;
-}
+
 
 .uk-container {
   box-sizing: border-box;
