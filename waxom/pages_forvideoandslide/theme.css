@@ -1,128 +1,4 @@
-/*меню*/
-nav{
-  width: 100%;
-  max-width: 100%;
-  z-index: 10000000;
-  position: relative;
-  top: 40px;
-  
-}
 
-.uk-container{
-  margin:0 auto;
-}
-.uk-container-center2{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
- nav .logo{
-  display: flex;
-  align-items: center;
-}
-nav .logo:hover{
-
-}
- .logo span{
-  color: white;
-  font-size: 34px;
-  font-weight: 400;
-  font-family: Raleway, sans-serif;
-  letter-spacing: -1.36px;
-}
-.top_menu nav .icons{
-  
-  display: flex;
-
-}
-.top_menu nav .icons a i{
-  color: white;
-  font-size: 18px;
-  transition: all 0.5s ease;
-}
-.top_menu nav .icons a i:last-child{
-  margin-left: 25px;
-}
-.top_menu nav .icons a i:hover{
-  color: #c7b299; 
-  transition: all 0.4s ease;
-}
-[class*=uk-animation-] {
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-.uk-animation-slide-top {
-  -webkit-animation-name: uk-fade-top;
-  animation-name: uk-fade-top;
-}
-.uk-animation-reverse {
-  -webkit-animation-direction: reverse;
-  animation-direction: reverse;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-}
-@keyframes uk-fade-top {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-
- 
-}
-.uk-active.tt-nav-wrap {
-  padding: 10px 0;
-  background: linear-gradient(to right,#231d1b,#513a2e);
-  box-shadow: 0 2px 4px -3px #000;
-  z-index: 100;
-}
-.uk-navbar-nav li a {
-  display: block;
-  box-sizing: border-box;
-  text-decoration: none;
-  padding: 0.7em;
-  color: #8c8c8c;
-  font-size: 14px;
-  font-family: oswald;
-  font-weight: 400;
-}
-.uk-dropdown {
-  display: none;
-  position: absolute;
-  z-index: 1020;
-  box-sizing: border-box;
-  width: 220px;
-}
-.main-menu-wrap ul{
-  display: flex;
-}
-.main-menu-wrap ul li {
-  padding: 0 5px;
-  
-  vertical-align: top;
-}
-.main-menu-wrap ul li a {
-  background: 0 0;
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
-  font-family: raleway,sans-serif;
-}
-.main-menu-wrap ul li:last-child a {
-  padding-right: 0;
-}
-.main-menu-wrap ul li a:hover {
-  color: #c7b299;
-  background: 0 0;
-}
-.main-menu-wrap ul li a:focus {
-  color: #c7b299;
-  background: 0 0;
-}
-/*конец меню*/
 
 
 
@@ -135,11 +11,7 @@ iframe {
   border: 0;
 }
 
-@media screen and (max-width:400px) {
-@  -ms-viewport {
-    width: device-width;
-  }
-}
+
 
 
 @media(min-width:1220px) {
@@ -152,13 +24,6 @@ iframe {
   }
 }
 
-.uk-grid-collapse {
-  margin-left: 0;
-}
-
-.uk-grid-collapse>* {
-  padding-left: 0;
-}
 
 [class*=uk-width] {
   box-sizing: border-box;
@@ -175,27 +40,6 @@ iframe {
   }
 }
 
-.uk-panel {
-  display: block;
-  position: relative;
-}
-
-.uk-panel,.uk-panel:hover {
-  text-decoration: none;
-}
-
-.uk-panel:before,.uk-panel:after {
-  content: "";
-  display: table;
-}
-
-.uk-panel:after {
-  clear: both;
-}
-
-.uk-panel>:not(.uk-panel-title):last-child {
-  margin-bottom: 0;
-}
 
 .uk-cover-background {
   background-position: 50% 50%;
@@ -246,9 +90,14 @@ iframe {
   cursor: pointer;
 }
 
-@font-face {
-  font-family:fontawesome;src:url(../warp/vendor/uikit/fonts/fontawesome-webfont.woff2) format('woff2'),url(../warp/vendor/uikit/fonts/fontawesome-webfont.woff) format("woff"),url(../warp/vendor/uikit/fonts/fontawesome-webfont.ttf) format("truetype");font-weight:400;font-style:normal;
-}
+
+
+
+
+
+
+
+
 
 [class*=uk-icon-] {
   font-family: FontAwesome;
@@ -337,13 +186,7 @@ iframe {
 .clear {
   clear: both;
 }
-img {
-  -khtml-user-select: none;
-  -o-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
+
 
 .tm-full-width>.uk-container {
   padding-left: 0;
@@ -431,10 +274,10 @@ img {
 }
 
 
+
+
+
 /*вкладки*/
-
-
-
 .uk-grid .text_uk_panel{
   text-align: center;
   margin:0 auto;
@@ -1177,5 +1020,11 @@ border-bottom: 10px solid #fbfaf8;
     text-align: center;
   }
 }
-
+img {
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
 /*end company

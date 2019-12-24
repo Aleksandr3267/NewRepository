@@ -25,7 +25,11 @@
 
 	}
 	.recent-posts .pageses .pages{
-margin:0 auto;
+	margin:0 auto;
+	
+}
+.recent-posts .pageses .pages{
+	margin-top: 50px;
 }
 }
 @media(max-width: 1024px){
@@ -72,10 +76,14 @@ margin:0 auto;
 	.postes .post .post-logo{
 		justify-content: center;
 	}
-	.postes .post .post-images img{
+	.postes .post .post-images{
+		display: flex;
 		
-		margin:0 auto;
+		flex-direction: column;
+		align-items: center;
 	}
+	
+	
 	.infomas{
 		flex-direction: column;
 	}
@@ -148,11 +156,11 @@ margin:0 auto;
 	#main-menu.active{
 		left: 0;
 	}
-	.main-menu-wrap ul{
+	.slider .main-menu-wrap ul{
 		display: block;
 		float: left;
 	}
-	.main-menu-wrap ul li a{
+	.slider .main-menu-wrap ul li a{
 		float: left;
 		font-size: 20px;
 		text-transform: uppercase;
@@ -242,22 +250,30 @@ margin:0 auto;
 
 }
 /*height*/
-@media(max-height: 690px){
+@media(max-height: 800px){
 	.oglavline{
-		margin-top: 210px;
+		bottom: 200px;
 	}
-	.INFORMASHN{
-		padding-top: 210px;
-	}
-}
-@media(max-height: 590px){
+}	
+@media(max-height: 640px){
 	.oglavline{
-		margin-top: 150px;
+		bottom: 100px;
 	}
-}
-@media(max-height: 530px){
+}	
+@media(max-height: 510px){
 	.oglavline{
-		margin-top: 80px;
+		bottom: 35px;
 	}
-}
+}	
+@media(max-height: 420px){
+	.oglavline{
+		bottom: 28px;
+	}
+	.oglavline button{
+		margin-top: 20px;
+	}
+	.slider__indicators{
+		bottom: 3px;
+	}
+}	
 /*end_height*/
