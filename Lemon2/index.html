@@ -12,70 +12,95 @@
 	<script>new WOW().init();</script>
 </head>
 <body>
-	<header class="header">
+<div class="wrapper">
+<header class="header">
 		<div class="container clearfix">	
 			<div class="navigasia">
-			<div class="top_logo">
-				<a href="#"><img src="images/Logocopy.png" alt="kart"></a>
-			</div>
-				<a href="#" class="menu">
-					<span class="burger_lines"></span>
-				</a>
-			<nav>
-				<div class="pod_logo">
-					<a href="#"><img src="images/Logocopy.png" alt="kart" height="60px"></a>
+				<div class="top_logo  bounceInLeft wow" data-wow-delay="0.2s">
+					<button class="shudow">
+						<span class="text_top_logo fadeInUp wow" data-wow-delay="0.6s">l</span>
+						<span class="text_top_logo fadeInDown wow" data-wow-delay="0.7s">e</span>
+						<span class="text_top_logo fadeInUp wow" data-wow-delay="0.8s">m</span>
+						<span class="text_top_logo fadeInDown wow" data-wow-delay="0.9s">o</span>
+						<span class="text_top_logo fadeInUp wow" data-wow-delay="1.0s">n</span>
+					</button>
 				</div>
-				<div class="menu2">
-					<ul class="nav_menu">
-						<li>
-							<a href="#" class="menu_link">home</a>
-						</li>
-						<li>
-							<a href="#" class="menu_link">recipes</a>
-						</li>
-						<li>
-							<a href="#" class="menu_link">photo galleries</a>
-						</li>
-						<li>
-							<a href="#" class="menu_link">videos</a>
-						</li>
-						<li>
-							<a href="#" class="menu_link">all categories</a>
-						</li>
-					</ul>
-				</div>
-				<div class="poisk">
-					<form action="">
-					<div class="dws_input">
-						<i class="fa fa-search" aria-hidden="true"></i>
-						<input type="text" name="username" placeholder="find a recipe" >
+				<div class="header-burger">
+		            <span></span>
+		        </div>
+		        <!-- НАВИГАЦЯ -->
+				<nav class="shudow">
+					<!-- ЛОГОТИП -->
+					<div class="pod_logo">
+						<img src="images/Logocopy.png" alt="kart" height="60px">
 					</div>
-					</form>
-				</div>
-			</nav>
-				<div class="meny_overfow"></div>
+					<!--  -->
+					<!-- МЕНЮ -->
+					<div id="main-menu" class="menu">
+						<ul class="nav_menu">
+							<li>
+								<a href="#" class="menu_link">home</a>
+							</li>
+							<li>
+								<a href="#" class="menu_link">recipes</a>
+							</li>
+							<li>
+								<a href="#" class="menu_link">photo galleries</a>
+							</li>
+							<li>
+								<a href="#" class="menu_link">videos</a>
+							</li>
+							<li>
+								<a href="#" class="menu_link">all categories</a>
+							</li>
+						</ul>
+					</div>
+					<!--  -->
+					<!-- ПОИСК -->
+					<div class="poisk">
+						<form action="#">
+						<div class="dws_input">
+							<i class="fa fa-search" aria-hidden="true"></i>
+							<input type="text" name="username" placeholder="find a recipe"  >
+						</div>
+						</form>
+					</div>
+					<!--  -->
+				</nav>
+				<!--  -->
 			</div>
 		</div>
-	</header>
-	<section class="container" id="meshu">
-		<div class="container">
-			<div class="fruckt bounceInLeft wow" data-wow-delay="0.9s">
-				<img src="images/Logocopy.png" alt="kart">
-				<h2>Bananas Foster Ice Cream Cake</h2>
-				<p>If you're looking for decadence, look no further —<br/> you've found the Holy Grail of desserts. Honestly,<br/> this cake makes us wonder why Bananas Foster<br/> hasn't always been served on top of ice cream<br/> cake.</p>
-				<div class="bottom">
-					<a href="#" class="fi">get it recipe</a>
+</header>
+<!-- -----------------------------------------------------------------------------	 -->
+<section id="meshu">
+		<div class="container ">
+			
+			<div class="get_it shudow ">
+				<!-- <div class="bg_meshu">
+				<img src="images/Photo.png">
+				</div> -->
+				<div class="fruckt fadeInLeftBig wow" data-wow-delay="1.3s">
+					<div class="fruct_opisanie_glav">	
+						<img src="images/Logocopy.png" alt="kart">
+						<h2>Bananas Foster Ice Cream Cake</h2>
+						<p>If you're looking for decadence, look no further —<br/> you've found the Holy Grail of desserts. Honestly,<br/> this cake makes us wonder why Bananas Foster<br/> hasn't always been served on top of ice cream<br/> cake.</p>
+					</div>
+					<button class="fruct_buttonget">
+						<a href="#" class="fi">get it recipe</a>
+					</button>
 				</div>
+				
+				
 			</div>
-			<br/>
-			<div class="botons">
-				<a href="#" class="fi">get it recipe</a>
+			<div class="get_it_resp_bit">
+				<a href="#">get it recipe</a>
 			</div>
 		</div>
-	</section>		
-	<section class="container" id="porsu">
+</section>				
+<!-- ----------------------------------------------------------------------------	 -->
+<section id="porsu">
 		<div class="container">
-			<div class="porsii">
+			<div class="porsii shudow">
 				<div class="pors">
 					<img src="images/Photo1.png" alt="kart">
 					<p>Raspberry & Cream Frozen Yogurt Pie</p>
@@ -91,66 +116,88 @@
 				</div>
 			</div>
 		</div>
-	</section>		
-	<section class="container"  id="BANANA">
+</section>	
+<!-- ------------------------------------------------------------------------- -->
+<section  id="BANANA">
 		<div class= "container">
-			<div class="bananas bounceInRight wow" data-wow-delay="0.9s">
-				<h2>Bananas Foster Ice Cream Cake</h2>
-				<div class="botom">
-					<a href="#" class="fi">save recipe</a>
+			<div class="bananas shudow" >
+				<div class="bananas_text">
+					<h2>Bananas Foster Ice Cream Cake</h2>
+					<button>
+							<a href="#" class="fi">save recipe</a>
+					</button>
+					<div class="poragrafs">
+						<p> 1 (8 ounce) container frozen whipped topping, thawed
+						20 chocolate round wafers, divided
+						1 (7 1/4 ounce) bottle Smucker's® Hot Dark Chocolate Microwaveable Top-ping, divided</p>
+						<h5>
+							Directions
+						</h5>
+						<p>ARRANGE 8 to 9 ice cream sandwiches in 9-inch square pan, cutting to form an even layer. Spread with half of whipped topping. Break or crush chocolate wafers and sprinkle over the whipped cream. Microwave 1 cup of chocolate topping into small microwave-safe bowl on HIGH for 30 seconds. Drizzle evenly over wafers.
+						TOP with remaining 8 to 9 ice cream sandwiches to form an even layer. Spread with remaining whipped topping. Freeze 3 hours or overnight. Remove</p>
+						<p> chocolate wafers and sprinkle over the whipped cream. Microwave 1 cup of chocolate topping into small microwave-safe bowl on HIGH for 30 seconds. Drizzle evenly over wafers.
+						TOP with remaining 8 to 9 ice cream sandwiches to form an even layer. Spread with remaining whipped topping. Freeze 3 hours or overnight. Remove</p>
+						<p> form an even layer. Spread with half of whipped topping. Break or crush chocolate wafers and sprinkle over the whipped cream. Microwave 1 cup of chocolate topping into small microwave-safe bowl on HIGH for 30 seconds. Drizzle evenly over wafers.
+						TOP with remaining 8 to 9 ice cream sandwiches to form an even layer. Spread with remaining whipped topping. Freeze 3 hours or overnight. Remove</p>
+					</div>
 				</div>
-				<p> 1 (8 ounce) container frozen whipped topping, thawed<br/>
-				20 chocolate round wafers, divided<br/>
-				1 (7 1/4 ounce) bottle Smucker's® Hot Dark Chocolate Microwaveable Top-<br/>ping, divided</p>
-				<h5>
-					Directions
-				</h5>
-				<p>ARRANGE 8 to 9 ice cream sandwiches in 9-inch square pan, cutting to<br/> form an even layer. Spread with half of whipped topping. Break or crush<br/> chocolate wafers and sprinkle over the whipped cream. Microwave 1 cup of<br/> chocolate topping into small microwave-safe bowl on HIGH for 30 seconds.<br/> Drizzle evenly over wafers.<br/>
-				TOP with remaining 8 to 9 ice cream sandwiches to form an even layer.<br/> Spread with remaining whipped topping. Freeze 3 hours or overnight. Remove</p>
 			</div>	
 		</div>
-	</section>		
-	<section class="portfolies">
+</section>	
+<!-- ------------------------------------------------------------------------- -->
+<section class="portfolies">
 		<div class="container">
-			<div class=" potfolio clearfix">
-				<div class="problem">
+			<div class=" potfolio">
+				<div class="problem shudow">
 					<div class="ziga"><span><i>404</i></span></div>
-				<div class="otvet">	
-					<h3>Sorry</h3>
-					<span>we couldnt<br/>find the page<br/></span>
-					<div class="bot">
-					<a href="#" class="fi">back</a>
-					</div>
-				</div>	
+					<div class="otvet">	
+						<h3>Sorry</h3>
+						<span>we couldnt<br/>find the page<br/></span>
+						<div class="bot">
+						<a href="#" class="fi">back</a>
+						</div>
+					</div>	
 				</div>
-				<div class="author">
+
+				<div class="author shudow">
 					<div class="ziga"><span><i>Author</i></span></div>
-					<img src="images/ava.png" alt="kart">
-					<h4>
-					Karen Gray
-					</h4>
-					<p>
-					United States
-					</p><hr/>
-					<h5>
-					About Lemon
-					</h5>
-					<div class="ob clearfix">
-					<p >
-					Over the fifteen-year life span of Food.com, we’ve<br/> learned that – in addition to eating – sharing is<br/> what you do best. And thanks to the 20 million of<br/> you who come here each month, we now have<br/> 500,000 recipes to show for it, more than any-<br/>where else in the digital universe. We also have tons<br/> crazy-tempting photos, troves of recipe reviews and<br/> more than 2 million Facebook likes. That’s a heck of a lot of <br/>Food. Thank you!
-					</p>
-					<img src="images/Signature.png" alt="rosp">
+					<div class="author_contant">
+						<div class="author_img">
+							<img src="images/ava.png" alt="kart">
+						</div>
+						<div class="author_text">
+							<div class="name_au">
+								<h4>
+								Karen Gray
+								</h4>
+								<p>
+								United States
+								</p>
+							</div>
+								<h5>
+								About Lemon
+								</h5>
+							
+								<p class="ob">
+								Over the fifteen-year life span of Food.com, we’ve learned that – in addition to eating – sharing is what you do best. And thanks to the 20 million of you who come here each month, we now have 500,000 recipes to show for it, more than any-where else in the digital universe. We also have tonscrazy-tempting photos, troves of recipe reviews and more than 2 million Facebook likes. That’s a heck of a lot of Food. Thank you!
+								</p>
+								<img class="rosp" src="images/Signature.png" alt="rosp">
+							
+						</div>
 					</div>
 				</div>
+
 			</div>
 			
 		</div>
-	</section>
-	<section id="portfolio">
-		<div class="container2 clearfix">
+</section>
+<!-- ------------------------------------------------------------------------- -->
+<section id="portfolio">
+		<div class="container2">
 		<div class="pod_portfolio">
-			<div class="stolbick1 ">
-				<div class="cichiorchichi">
+			<div class="stolbick1">
+				<!-- chi-chi -->
+				<div class="cichiorchichi shudow">
 				<div class="ziga2"><span>Chi-Chi or Chichi</span></div>
 				<img class="avu" src="images/UberDatacopy.png" alt="ava">	
 				<div class="piu">
@@ -163,7 +210,9 @@
 				</div>
 					<img class="slidi" src="images/DarkCover.png" alt="slid">
 				</div>
-				<div class="presentationline">
+				<!--  -->
+				<!-- procent -->
+				<div class="presentationline shudow">
 					<div class="ziga3">
 						<span><i>Target</i></span>
 					</div>
@@ -186,10 +235,12 @@
 							<p>Ei nam primis putent<br/>signiferumque</p>
 						</div>		
 				</div>
+				<!--  -->
 			</div>
-			<div class="stolbiki12">
+			<!-- --------------------------------------------------------- -->
 			<div class="stolbick2 ">
-				<div class="Recipe">
+				<!-- recipe -->
+				<div class="Recipe shudow">
 					<div class="ziga3">
 						<span><i>Recipe</i></span>
 					</div>
@@ -232,7 +283,9 @@
 							<a href="#" class="fi">view more</a>
 						</div>
 				</div>
-				<div class="tags1">
+				<!--  -->
+
+				<div class="tags1 shudow">
 					<div class="ziga3">
 						<span><i>Tags</i></span>
 					</div>
@@ -242,62 +295,66 @@
 						<p>#delicious #eating #food</p>
 					</div>
 				</div>
-				
-		<div class="calendare">
+				<!--  -->
+				<!-- calendar -->
+				<div class="calendare shudow">
 					<div class="ziga3">
 						<span><i>Calendar</i></span>
 					</div>
 					<div class="mesyac">
 						<p>June 2019</p>
 					</div>
-		<div class="date">
-			<div class="day">Su</div>
-			<div class="day">Mo</div>
-			<div class="day">Tu</div>
-			<div class="day">We</div>
-			<div class="day">Th</div>
-			<div class="day">Fr</div>
-			<div class="day">Sa</div>
-			<div class="numberser">28</div>
-			<div class="numberser">29</div>
-			<div class="numberser">30</div>
-			<div class="numberser">31</div>
-			<div class="number">1</div>
-			<div class="number">2</div>
-			<div class="number">3</div>
-			<div class="number">4</div>
-			<div class="number">5</div>
-			<div class="number">6</div>
-			<div class="number">7</div>
-			<div class="number">8</div>
-			<div class="number">9</div>
-			<div class="number">10</div>
-			<div class="number">11</div>
-			<div class="number">12</div>
-			<div class="number">13</div>
-			<div class="number">14</div>
-			<div class="number">15</div>
-			<div class="number">16</div>
-			<div class="number">17</div>
-			<div class="number">18</div>
-			<div class="number">19</div>
-			<div class="number">20</div>
-			<div class="number">21</div>
-			<div class="number">22</div>
-			<div class="number">23</div>
-			<div class="number">24</div>
-			<div class="number">25</div>
-			<div class="number">26</div>
-			<div class="number">27</div>
-			<div class="number">28</div>
-			<div class="number">29</div>
-			<div class="number">30</div>
-			<div class="numberser">1</div>
-		</div>
-		</div>	
+						<div class="date">
+							<div class="day">Su</div>
+							<div class="day">Mo</div>
+							<div class="day">Tu</div>
+							<div class="day">We</div>
+							<div class="day">Th</div>
+							<div class="day">Fr</div>
+							<div class="day">Sa</div>
+							<div class="numberser">28</div>
+							<div class="numberser">29</div>
+							<div class="numberser">30</div>
+							<div class="numberser">31</div>
+							<div class="number">1</div>
+							<div class="number">2</div>
+							<div class="number">3</div>
+							<div class="number">4</div>
+							<div class="number">5</div>
+							<div class="number">6</div>
+							<div class="number">7</div>
+							<div class="number">8</div>
+							<div class="number">9</div>
+							<div class="number">10</div>
+							<div class="number">11</div>
+							<div class="number">12</div>
+							<div class="number">13</div>
+							<div class="number">14</div>
+							<div class="number">15</div>
+							<div class="number">16</div>
+							<div class="number">17</div>
+							<div class="number">18</div>
+							<div class="number">19</div>
+							<div class="number">20</div>
+							<div class="number">21</div>
+							<div class="number">22</div>
+							<div class="number">23</div>
+							<div class="number">24</div>
+							<div class="number">25</div>
+							<div class="number">26</div>
+							<div class="number">27</div>
+							<div class="number">28</div>
+							<div class="number">29</div>
+							<div class="number">30</div>
+							<div class="numberser">1</div>
+						</div>
+				</div>
+					<!--  -->
 			</div>
+<!-- ------------------------------------------------------------------------			 -->
 			<div class="stolbick3 ">
-				<div class="popularNow">
+				<!-- popular -->
+				<div class="popularNow shudow">
 					<div class="vnutre">
 					<div class="ziga4"><span class="zag">Popular Now</span></div>
 					<span class="zag2">Vanila Frozen Coffee</span>
@@ -307,7 +364,9 @@
 					</div>	
 					</div>
 				</div>
-				<div class="timeline">
+				<!--  -->
+				<!-- timeline -->
+				<div class="timeline shudow">
 					<div class="ziga3">
 						<span><i>Timeline</i></span>
 					</div>
@@ -336,41 +395,43 @@
 						ut malis audire voluptaria has.</p>
 					</div>
 				</div>
+				<!--  -->
 			</div>
-		</div>
+		
 		</div>
 	</div>	
-</section>	
+</section>
+<!-- ------------------------------------------------------------------------- -->
 <section id="registraciya">
-			<div class="container3">
-			<div class="wwodpole clearfix">
-			<div class="login">
-				<div class="ziga3">
-						<span><i>Login</i></span>
-				</div>
-				<div class="logsiinfol">
-					<p>Login for LEMON</p>
-				</div>	
-				<div class="polya">
-					<form action="">
-					<div class="dws_input">
-						<input type="text" name="username" placeholder="email or login">
-						<input type="text" name="username" placeholder="password">
+	<div class="container3">
+		<div class="wwodpole">
+			<div class="login shudow">
+					<div class="ziga3">
+							<span><i>Login</i></span>
 					</div>
-					</form>
-				</div>
-				<div class="buttonlogsi">
-					<a href="#" class="fi">login</a>
-				</div>
-			<div class="nisha">
-				<div class="icons2">
-					<a href="https://www.facebook.com/" target="blanck"><i class="fab fa-facebook-f"></i></a>
-					<a href="https://www.google.ru/" target="blanck"><i class="fab fa-google-plus-g"></i></a>
-				</div>
-				<p>Don't have an accont? Sign in</p>
-			</div>	
+					<div class="logsiinfol">
+						<p>Login for LEMON</p>
+					</div>	
+					<div class="polya">
+						<form action="">
+						<div class="dws_input">
+							<input type="text" name="username" placeholder="email or login">
+							<input type="text" name="username" placeholder="password">
+						</div>
+						</form>
+					</div>
+					<div class="buttonlogsi">
+						<a href="#" class="fi">login</a>
+					</div>
+					<div class="nisha">
+						<div class="icons2">
+							<a href="https://www.facebook.com/" target="blanck"><i class="fab fa-facebook-f"></i></a>
+							<a href="https://www.google.ru/" target="blanck"><i class="fab fa-google-plus-g"></i></a>
+						</div>
+						<p>Don't have an accont? Sign in</p>
+					</div>	
 			</div>
-			<div class="signin">
+			<div class="signin shudow">
 				<div class="ziga3">
 						<span><i>Sign in</i></span>
 				</div>
@@ -402,11 +463,12 @@
 				</div>
 			</div>
 		</div>
-		</div>
-</section>	
+	</div>
+</section>
+<!-- --------------------------------------------------------------------------->
 <section id="comentarie">
 		<div class="container4">
-			<div class="postcoment">
+			<div class="postcoment shudow">
 				<div class="shapkspostcom  clearfix">
 					<div class="oglavlenyei">	
 						<p><i>Post a Comment</i></p>
@@ -429,8 +491,10 @@
 			</div>
 		</div>	
 </section> 
- <footer class="footer">
- 	<div class="container">
+<!-- ------------------------------------------------------------------- -->
+<div class="container">
+<footer class="footer">
+ 	
  		<div class="konece">
  			<img src="images/Logo.png" alt="logo_footer">	
  			<div class="menu3">
@@ -444,7 +508,9 @@
  			</div>
 
  			<div class="social_og">
- 				<p>@2016-2017 LEMON. All right reserved</p>
+				<div class="year_lem">
+ 					<p>@2016-2017 LEMON. All right reserved</p>
+				</div>
  				<div class="sety">
  					<a href="https://www.google.ru/" target="blanck"><i class="fab fa-google-plus-g"></i></a>
  					<a href="#"><i class="fab fa-twitter"></i></a>
@@ -453,9 +519,11 @@
  				</div>
  			</div>
  		</div>
- 	</div>
- </footer>
-
+ 	
+</footer>
+</div>
+<!-- ------------------------------------------------------------------- -->
+</div>
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="https://kit.fontawesome.com/0f50a82545.js"></script>

@@ -1,45 +1,65 @@
+/*Обнуление*/
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+html, body, div, ul,
+*{
+  margin:0;
+  padding: 0;
+}
+h1, h2, h3,  pre, form, label, input, p,
+blockquote, th, td { margin:0; padding:0 }
+img { border:0 }
+ul { list-style:none }
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------------------*/
+
+
+
+ /*шрифты*/
+@font-face {
+/*// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) */
+font-family: "Anders"; 
+/*// адрес шрифта и тип */
+src: url("../shrifts/Anders.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+ /*-------------------------------------------------------*/
+
 body{
 	font-family: Arial, sans-serif;	
 	background: #EBEBEB;
 	padding-top: 250px;
+
 }
+/*не подвижность для бургера*/
+body.locks{
+	overflow: hidden;
+	margin-left: -7px;
+}
+/**/
 p{
 	font-family: 'Josefin Slab', serif;
 	color: #0B0B0B;
 }
-*{
-	margin:0;
-	padding: 0;
-	text-decoration: none;
-	list-style: none;
-	border: 0;
+.shudow:hover{
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-:focus,:active{
-	outline: none;
-}
-a:focus,a:active{
-	outline: none;
-}
-nav,footer,header,aside{
-	display: block;
-}
-html,body{
-	height: 100%;
+.wrapper{
 	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust:100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust:100%;
-}
-input,button,textarea{
-	font-family: inherit;
+	height: 100%;
+
 }
 .clearfix:after {
 	content:""; 
@@ -59,10 +79,31 @@ input,button,textarea{
 }
 .top_logo{
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	
+	
+}
+.top_logo button{
+	display: flex;
+	border: 2px solid grey;
+	
+	
+}
+.top_logo button:hover{
+	background: inherit;
+}
+.top_logo .text_top_logo{
+	display: block;
+	font-family: 'Anders';
+	color: rgba(0,0,0,0.8);
+	font-size: 80px;
+	font-weight: inherit;
+	text-transform: uppercase;
 }
 .pod_logo{
 	background: white;
-
+	
 }
 .pod_logo img{
 	height: 40px;
@@ -75,14 +116,15 @@ nav {
 	justify-content: space-around;
 	height: 120px;
 	align-items: center;
+	transition: all 0.3s;
 }
-.menu2{
+.menu{
 	margin-top: 5px;
 }
-.menu2 li{
-	float: left;
+.menu ul{
+	display: flex;
 }
-.menu2 li a{
+.menu li a{
 	text-transform: uppercase;
 	margin-left: 2em;
 	font-size: 17px;	 
@@ -90,9 +132,14 @@ nav {
 	line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
 	color:black;/*Задаём цвет ссылки*/
 }
+/**/
+/*НАВЕДЕНИЕ НА ПУНКТЫ МЕНЮ*/
+
+
 
 .menu_link{
 	transition: width 0.5s ease-in-out;
+	
 }
 .menu_link:after {
 	margin:0 auto;
@@ -108,16 +155,17 @@ nav {
 .menu_link:focus:after {
     width: 100%;
 }
-
+/**/
 .poisk input{
 border:1px solid grey;
 text-transform: uppercase;
 padding-left: 25px;
-
 text-align: center;
 padding-top: 5px;
 padding-bottom: 5px;
+width: 100%;
 }
+
 i.fa {
 	width: 18px;
 	height: 18px;
@@ -125,18 +173,30 @@ i.fa {
 	margin-right: -50px;
 	position: relative;
 	z-index: 1;
-	
+	color:rgba(0,0,0,0.2);
 	text-align: center;
 }
 i.fa + input{
 	padding-left: 15px;
 }
+/*-------------------------------------------------------------------*/
 #meshu{
-	background: url(../images/Photo.png) no-repeat center top / cover;
+	
 	margin-top: 90px;
-	height: 49vh;
-	margin-bottom: 85px;
+	
 }
+.get_it{
+	background: url(../images/Photo.jpg) no-repeat center top / cover;
+	width: 100%;
+	max-width: 1120px;
+	height: auto;
+	display: block;
+	transition: all 0.5s;
+}
+/*.get_it .bg_meshu img{
+	width: 100%;
+	height: auto;
+}*/
 .fruckt{
 	padding-top: 50px;
 	margin-left: 90px;
@@ -149,126 +209,149 @@ i.fa + input{
 	margin-top: 35px;
 	color: #B41E35;
 	font-size: 25px;
+	font-family: 'Josefin Slab', serif;
 }
 .fruckt p{
-	margin-top: 30px;
+	margin: 30px 0 0 0;
 	color: #0B0B0B;
 	font-size: 16px;
-}
-.bottom .fi{
-	padding:10px 20px 10px 20px;
-	border: 2px solid grey;
 
 }
-.bottom{
+button{
+	padding:5px 10px 5px 10px;
+	border: 1px solid rgba(0,0,0,0.2);
+	transition: all 0.5s ease;
+	background: inherit;
 	margin-top: 25px;
 }
-.bottom .fi:hover{
+
+button:hover{
 	cursor: pointer;
 	background: grey;
+}
+button:hover .fi{
 	color: white;
+}
+button .fi{
+	text-transform: uppercase;
+	font-family: Arial, sans-serif;
+	color: black;
 	transition: all 0.5s ease;
 }
-.bottom a{
-	text-transform: uppercase;
-	font-weight: bold;
-	color: grey;
-	line-height: 30px;
-}
-.botons{
+.get_it_resp_bit{
 	display: none;
-	width: 100%;
-	height: 100px;
-	text-align: center;
-	text-transform: uppercase;
-	position: absolute;
-	bottom: 220px;
 }
-.botons a{
-	font-weight: bold;
-	font-size: 40px;
-	color: black
-}
+/*---------------------------------------------------------------------------*/
 #porsu{
-	background: white;
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-	min-height: 375px;
+	margin:85px 0 0 0;
 }
 .porsii{
+	background: white;
 	display: flex;
 	justify-content: space-around;
 	font-size: 18px;
 	color: #0B0B0B;
 	align-items: center;
 	text-align: center;
-	padding-top: 35px;
+	padding: 30px 30px 40px 30px;
+	transition: all 0.4s;
 }
 .pors:last-child{
 	padding-top: 20px;
+}
+.pors img{
+	width: 100%;
+	max-width: 500px;
+	height: auto;
 }
 .pors p{
 	margin-top: 12px;
 	font-size: 18px;
 }
+/*---------------------------------------------------------------------------*/
 #BANANA{
-	background: url(../images/Photo11.png) no-repeat center top / cover;
+	
 	margin-top: 100px;
 
 }
 .bananas{
-	margin-left: 50%;
+	background: url(../images/Photo11.png) no-repeat center top / cover;
+	transition: all 0.4s;
 	padding-top: 40px;
 	padding-bottom: 25px;
 	
 }
-.bananas h2{
+.bananas_text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	margin:0 80px 0 0 ;
+
+}
+.bananas .bananas_text h2{
 	color: #005454;
 	font-size: 32px;
+	font-weight: bold;
 }
-.botom .fi{
-	padding:5px 10px 5px 10px;
-	border: 1px solid grey;
-	
+
+.bananas .bananas_text button{
+	float: right;
+	margin:30px 0 0 0;
 }
-.botom .fi:hover{
-	cursor: pointer;
-	background: grey;
-	color: white;
-	transition: all 0.5s ease;
-}
-.botom{
-	margin-top: 20px;
-	margin-left: 350px;
-}
-.botom a{
-	text-transform: uppercase;
-	color: #0B0B0B;
-	line-height: 15px;
-}
-.bananas p{
+
+.bananas .bananas_text p{
 	margin-top: 25px;
 	line-height: 18px;
 	font-size: 16px;
 }
+
+.poragrafs::-webkit-scrollbar {
+  width: 2px;
+
+}
+.poragrafs::-webkit-scrollbar-track {
+ background: rgba(0,0,0,0.1);
+
+}
+.poragrafs::-webkit-scrollbar-thumb {
+ background:black;
+ border-radius: 5px;
+ 
+}
+.poragrafs{
+	overflow: auto;
+	height:290px;
+	width: 100%;
+	max-width: 480px;
+	margin:15px 0 0 0;
+	padding: 0 5px 0 0;
+}
+
 .bananas h5{
 	font-size: 16px;
 	margin-top: 25px;
 }
-
-
+/*---------------------------------------------------------------------*/
 .portfolies{
 	margin-top: 100px;
 }
+.potfolio{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+/*ошибка*/
 .problem{
 	background: url(../images/ipn1.png);
 	width: 520px;
 	height: 520px;
-	float: left;
-	
+	transition: all 0.4s;
 }
 .ziga{
 	width: 450px;
-	border-bottom: 1px solid grey;
+	border-bottom: 2px solid rgba(0,0,0,0.1);
 	margin:0 auto;
 	font-weight: bold;
 	padding-top: 10px;
@@ -295,6 +378,7 @@ i.fa + input{
 	padding:5px 30px 5px 30px;
 	border: 1px solid grey;
 	color: black;
+	transition: all 0.5s ease;
 }
 .bot .fi:hover{
 	cursor: pointer;
@@ -310,56 +394,81 @@ i.fa + input{
 	color: grey;
 	line-height: 20px;
 }
+/**/
+/*author*/
 .author{
 	background: white;
 	width: 520px;
 	height: 520px; 
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-	float: right;
+	transition: all 0.5s;
+	
 }
-.author img{
-	float: left;
+.author_contant{
+	display: flex;
+
+}
+.author .author_text{
+	max-width: 55%;
+	margin-left: 20px;
+}
+.author .author_contant .author_img img{
+	
 	margin-left: 30px;
 	margin-top: 20px;
 }
-.author p{
-	margin-top: 10px;
+.author .author_contant .author_text .name_au{
+	border-bottom: 2px solid rgba(0,0,0,0.1);
+	padding-bottom: 20px;
+}
+.author .author_contant .author_text .name_au p{
 	font-size: 16px;
 }
-.author p:nth-child(4){
-	border-bottom: 2px solid grey;
-	width: 300px;
-	float: left;
-	padding-bottom: 40px;
+.author .author_contant .author_text p{
+	margin-top: 10px;
+	font-size: 14px;
+	margin-left: 0;
 }
-.author h4{
+
+.author .author_contant .author_text h4{
 	margin-top: 30px;
 	font-size: 24px;
 }
 
-.author h5{
-	margin-top: 90px;
+.author .author_contant .author_text h5{
+	margin-top: 30px;
 	font-size: 20px;
 	margin-bottom: 30px;
+
 }
-.ob p{
-	margin-left: 170px;
+.author .author_contant .author_text .ob{
 	line-height: 16px;
 }
-.ob img{
+.author .author_contant .author_text .rosp{
+	
 	float: right;
-}
+	
+	margin-top: 20px;
 
+}
+.author .author_contant .author_text .rosp:hover{
+	cursor:inherit;
+}
+/*---------------------------------------------------------------------*/
 #portfolio{
 	padding-top: 70px;
 	padding-bottom: 100px;
 	margin:0 auto;
 }
-
+.pod_portfolio{
+	display: flex;
+	justify-content: space-between;
+}
+/**/
 .cichiorchichi{
 	background: white;
 	width: 300px;
 	height: 360px;
+	transition: all 0.4s;
 }
 .ziga2{
 	width: 250px;
@@ -387,10 +496,12 @@ i.fa + input{
 	margin-top: 10px;
 	width: 100%;
 }
+/**/
 .Recipe{
 	min-height: 450px;
 	width: 290px;
 	background: white;
+	transition: all 0.4s;
 }
 .ziga3{
 	width: 250px;
@@ -444,7 +555,7 @@ i.fa + input{
 .botomi .fi{
 	padding:5px 10px 5px 10px;
 	border: 2px solid grey;
-	
+	transition: all 0.5s ease;
 }
 .botomi .fi:hover{
 	cursor: pointer;
@@ -464,12 +575,13 @@ i.fa + input{
 	line-height: 25px;
 	font-weight: bold;
 }
+/**/
 .popularNow{
 	background: url(../images/Photodfsf.png) no-repeat center top / cover;
 	width:290px;
 	height:360px;
 	padding-top: 30px;
-
+	transition: all 0.4s;
 }
 .ziga4 .zag{
 	color: #AB0722;
@@ -492,7 +604,7 @@ i.fa + input{
 .botop .fi{
 	padding:5px 10px 5px 10px;
 	border: 1px solid grey;
-	
+	transition: all 0.5s ease;
 }
 .botop .fi:hover{
 	cursor: pointer;
@@ -600,14 +712,14 @@ i.fa + input{
 .stran2{
 	margin-top: 60px;
 }
-.stolbick1{
-	float: left;
-}
+
+/**/
 .presentationline{
 	background: white;
 	height: 470px;
 	margin-top: 40px;
 	width: 290px;
+	transition: all 0.4s;
 }
 .oglav{
 	margin-left: 30px;
@@ -619,9 +731,6 @@ i.fa + input{
 	color: #006767;
 	margin-top: 20px;
 }
-
-
-
 .procent:first-child{
 	padding-top: 30px;
 }
@@ -645,16 +754,13 @@ i.fa + input{
 	margin-left: 20px;
 }
 
-
-.stolbick2{
-	float: left;
-	margin-left: 80px;
-}
+/**/
 .tags1{
 	background: white;
 	height: 160px;
 	width: 290px;
 	margin-top:50px;
+	transition: all 0.4s;
 }
 .tags1 .shtrihh{
 margin-top: 10px;
@@ -668,15 +774,14 @@ margin-left: 20px;
 	margin-left: 10px;
 }
 
-
-
-
+/**/
 .calendare{
 	height: 365px;
 	width: 290px;
 	background: white;
 	margin-top: 45px;
 	box-sizing: border-box;	
+	transition: all 0.4s;
 }
 .calendare .date{
 	padding: 20px;
@@ -714,14 +819,15 @@ margin-left: 20px;
 .mesyac p{
 	font-size: 18px;
 }
-.stolbick3{
-	float: right;
-}
+/**/
+
+/**/
 .timeline{
 	height: 430px;
 	width: 290px;
 	background: white;
 	margin-top: 40px;
+	transition: all 0.4s;
 }
 .polosiie{
 	display: flex;
@@ -781,20 +887,26 @@ margin-top: 55px;
 	max-width: 745px;
 	margin:0 auto;
 }
+/*----------------------------------------------------------------------*/
 #registraciya{
 	padding-bottom: 125px;
+}
+.wwodpole{
+	display: flex;
+	justify-content: space-between;
 }
 .login{
 width: 330px;
 height: 405px;
 background: white;
-float: left;
+transition: all 0.4s;
 }
 .signin{
 width: 330px;
 height: 535px;
 background: white;
-float: right;
+
+transition: all 0.4s;
 }
 .logsiinfol{
 	margin-top: 25px;
@@ -824,6 +936,7 @@ float: right;
 	text-transform: uppercase;
 	font-family: Arial, sans-serif;
 	color: black;
+	transition: all 0.5s ease;
 }
 .buttonlogsi .fi:hover{
 	cursor: pointer;
@@ -847,6 +960,7 @@ float: right;
 	margin-left: 20px;
 	margin-bottom: 20px;
 	margin-top: 20px;
+	transition: all 0.5s ease;
 }
 .icons2 a:hover{
 	color: grey;
@@ -870,6 +984,7 @@ float: right;
 	color: green;
 	font-size: 16px;
 }
+/*------------------------------------------------------------------------*/
 #comentarie{	
 }
 .container4{
@@ -880,6 +995,7 @@ float: right;
 .postcoment{
 	height: 190px;
 	background: white;
+	transition: all 0.4s;
 }
 .shapkspostcom{
 	padding-bottom: 20px;
@@ -928,6 +1044,7 @@ float: right;
 	text-transform: uppercase;
 	line-height: 40px;
 	color: white;
+	transition: all 0.5s ease;
 }
 .butonotp .fi:hover{
 	cursor: pointer;
@@ -940,66 +1057,66 @@ float: right;
 	float: left;
 	margin-top: 10px;
 }
+/*-------------------------------------------------------------------*/
 .footer{
-	width: 100%;
-	max-width: 1120px;
-	margin:0 auto;
 	margin-top: 150px;
-	padding-top: 50px;
 	background:#2f2f2f;
-	min-height: 180px;
+	padding: 50px 50px 50px 100px;
 }
-.konece{
+footer .konece{
 display: flex;
 align-items: center;
+justify-content: space-between;
 }
-.konece img{
-	width: 87px;
-	height: 36px;
-	margin-left: 86px;
+footer .konece img{
+	width: 120px;
+	height: auto;
+	
 }
-.konece .menu3{
-	margin-left: 112px;
+footer .konece .menu3{
+	
 }
-.konece .menu3 li{
-	float: left;
+footer .konece .menu3 ul{
+	display: flex;
 }
-.konece .menu3 li a{
+footer .konece .menu3 li a{
 	color: #767676;
 	font-size: 12px;
 	margin-left: 20px;
 	font-weight: 300;
 	text-transform: uppercase;
 	font-weight: bold;
+	transition: all 0.5s ease;
 }
-.konece .menu3 li a:hover{
+footer .konece .menu3 li a:hover{
 	color: white;
 	transition: all 0.5s ease;
 }
-.konece .social_og{
-	margin-left: 133px;
+footer .konece .social_og{
+	
 	margin-top: 40px;
 }
-.konece .social_og p{
+footer .konece .social_og p{
 	color: #767676;
 }
-img:hover{
-	cursor: pointer;
-}
-.sety{
+footer .konece .social_og .sety{
 	float: right;
 	margin-top: 15px;
 }
-.sety a{
+footer .konece .social_og .sety a{
 	color: #767676;
 	font-size: 20px;
 	margin-left: 10px;
+	transition: all 0.5s ease;
 }
-.sety a:hover{
+footer .konece .social_og .sety a:hover{
 	color: white;
 	transition: all 0.5s ease;
 }
-img:hover{
-	opacity: 0.8;
+img{
 	transition: all 0.5s ease;
+}
+img:hover{
+	opacity: 0.9;
+	cursor: pointer;
 }
