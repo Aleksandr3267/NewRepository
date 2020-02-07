@@ -8,7 +8,38 @@ $(document).ready(function() {
 });
 // 
 // --------------------------------------------------------------------------
+// ВЫДВИГАЕМОЕ МЕНЮ
+$(document).ready(function() {
+   var previousScroll = 0,
+     navBarOrgOffset = $('#navbar').offset().top;
 
+   $('#navigation').height($('#navbar').height());
+
+   $(window).scroll(function() {
+     var currentScroll = $(this).scrollTop();
+    // console.log(currentScroll + " and " + previousScroll + " and " + navBarOrgOffset);
+     if (currentScroll > navBarOrgOffset) {
+       if (currentScroll > previousScroll) {
+         document.getElementById("navbar").style.top = "-126px"; 
+          
+
+        
+       } else {
+         document.getElementById("navbar").style.top = "50px";
+         $('#navbar').addClass('fixed');
+
+
+       }
+     } else {
+       $('#navbar').removeClass('fixed');
+        
+
+     }
+     previousScroll = currentScroll;
+   });
+
+ });
+// -------------------------------------------------------------------------------
 // slider
 'use strict';
     var slider = (function (config) {
@@ -195,38 +226,8 @@ $(document).ready(function() {
     }));
 // end_slider
 // --------------------------------------------------------------------------
-
-// filters
-// focused
-// $(document).ready(function() {
-//  $('.button[filter]').click(function() {
-
-//     if($(this).attr('filter')=='all') {
-//        if($(this).attr('val')=='off') {
-//         $('.button[filter]').attr('val', 'off');
-//         $(this).attr('val', 'on');
-//         $('.button[filter]').removeClass('focused');
-//         $(this).addClass('focused');
-//         $('.filter > div').show(300);
-//        }
-//     } else
-//     if($(this).attr('val')=='off') {
-//         $('.button[filter]').attr('val', 'off');
-//         $(this).attr('val', 'on');
-//         $('.button[filter]').removeClass('focused');
-//         $(this).addClass('focused');
-//         $('.filter > div').hide(300);
-//         var filter = $(this).attr('filter');
-//         $('.filter > div[filter='+filter+']').show(300);
-//     }
-//   })
-// })
-  // end_focused
-  
+// ФИЛЬТРАЦИЯ  
 $(document).ready(function() {
-
-
-
 
     $('.button[filter="all"]').addClass('focused')
 
@@ -238,10 +239,6 @@ $(document).ready(function() {
     $('.button[filter]').attr('val', 'off');
     $(this).attr('val', 'on');
      
-    
-
-      
-        
 
          $('.button[filter]').removeClass('focused');
          $(this).addClass('focused');
@@ -316,16 +313,13 @@ $(document).ready(function() {
 // 
 // --------------------------------------------------------------------------
 // video
-
-
-
 $(document).on('click', '.play_video', function() {
   var $video = $('#video'),
     src = $video.attr('src');
  
   $video.attr('src', src + '&autoplay=1');
 
-  $('iframe').show(300);
+  
   $('.overflow, .contant_on_video').hide(200);
 });
 // 
@@ -337,7 +331,7 @@ $('#counter').each(function(){
   var
   cPos = $(this).offset().top,
   topWindow = $(window).scrollTop();
-  if (cPos < topWindow + 400) {
+  if (cPos < topWindow + 200) {
     if (cc < 2) {
       $('.number').addClass('viz');
         $('div').each(function(){
